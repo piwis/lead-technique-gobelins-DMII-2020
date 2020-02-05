@@ -7,5 +7,5 @@ deploy:
   api_key:
     secure: "3f0ea407-b326-4f93-8f94-395a6a404384"
     app:
-    master: leaddevgobelins-production
-    develop: leaddevgobelins-staging
+      master: leaddevgobelins-production
+      develop: leaddevgobelins-staging
