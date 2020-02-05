@@ -1,3 +1,11 @@
 language: node_js
 node_js:
 - "8.6.0"
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: "3f0ea407-b326-4f93-8f94-395a6a404384"
+    app:
+    master: leaddevgobelins-production
+    develop: leaddevgobelins-staging
