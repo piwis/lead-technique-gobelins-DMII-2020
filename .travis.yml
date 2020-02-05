@@ -1,10 +1,10 @@
 language: node_js
 node_js:
-- "8.6.0"
-
+- 8.6.0
 deploy:
   provider: heroku
-  api_key: 3f0ea407-b326-4f93-8f94-395a6a404384
+  api_key:
+    secure: dxop/LAhyyhT3OYV/IZHgliyzJf+31okmIJvJA7X6+FcvOS+Wuc7Wepamwq/ZJA+LpxTbRXnPjIqlkjtSD8BZex5ldiafHE2aq+ll3vaCTH2icd9hnunr+NdA/EXskIzeCmoF7IuET6RdnA0QU/bOYNc5SCyhzWf/FybNMsjW+NSkjylfHYEzkmX6HE12C+V4L4kxvUWp9fehjXSpBjPB0dA/GOoZS2sHfm0gzBnyzrWsowIgi9cz3Lt9X1r6xKv3m2KSDijl6a79DKAHfMPPMI4S8WhUKTH2PFGi0A4jGtNdhrGjjdSDnjtVPhmSl8AjzpP1u4ghQ4IHJiYZn5fnZkM2Rhen7B/gW0N31RdNVC87mVyzteqcHxc6A00iFMXUiL+DUVdyBkDbqAQ/1TLRseM9bXSSMh45qAQUQb4DfHVpHEf7B6vm3cJrIeod3bp3bnPMNFTODPzGaeqAnI3H0A0B3bxBQy+MpEYjv2W7QDH21BOZD+TooS5kvQVtJOv8KojUXorT7B94Z6BELuL78oOmnLPT4+65g604Rq03I0n4cbSgV8dNPWOl9D8rhj6KphAz4WmH+Ag2OBo789t+gxkgV1bIMwY3cNmn3EnFargJVEMzRwQelT1m1E67gxR7o7yJlllv+LELNJ4r2s3h2bsoqMe8WVqpzYAi9b/8Bs=
   app:
     master: leaddevgobelins-production
     develop: leaddevgobelins-staging
