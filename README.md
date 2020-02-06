@@ -1,33 +1,81 @@
-  # express-app-testing-demo
+# Standards à mettre en place
 
-This project is a simple express app for demonstrating testing and code coverage.
-[Jest](https://facebook.github.io/jest/) and
-[Supertest](https://github.com/visionmedia/supertest) are used for testing.
-Jest is also used for mocking functions and measuring code coverage.
-Note that this app only focuses on server-side JavaScript testing.
+Bienvenu sur le projet
+
+## Installation du projet
+
+Avoir node.js et npm d'installer sur le projet :
+
+ - Npm version `6.13.4`
+ - NodeJs version `12.14.1`
+
+## Les commentaires
+
+## API
+Les routes d'API devront respecter la norme [REST](https://restfulapi.net/resource-naming/)
+
+# Les règles en front 
+
+### Standards javascript
+
+Le projet se base sur [JavaScript ES6](https://github.com/elierotenberg/coding-styles/blob/master/es6.md)
+
+Le projet se base aussi sur TypeScript pour éviter les erreurs de typage.
+
+### Standards du style
+
+Le projet se base sur [SASS](https://sass-lang.com/documentation)
 
 
-## Requirements
+# Les règles en back 
 
-* Node.js - [https://nodejs.org/](https://nodejs.org/)
+### POO et Programmation fonctionnelle
+
+La programmation orientée objet amène un code modulaire.
+
+# Github
+
+Le projet contient un travis et un git flow.
+
+### `/master`
+
+Ne jamais se mettre sur la branche master pour développer. Pour récupérer les modifications faites sur la branche developer.
+
+Aller sur develop, faite vos modification. Un git flow est mise en place, créez votre release pour ajouter les modifications sur le prod.
+
+### `/develop`
+
+La branche develop permet de mettre à jour la prépoduction sur heroku.
 
 
-## Getting Started
 
-* Clone the repo
-* Install dependencies with `npm install`
-* Run server with `npm start` and go here:
-[http://localhost:3000/](http://localhost:3000/)
+## Sécurité
 
+Toujours respecter le [OWASP Top 10](https://www.httpcs.com/fr/top-10-owasp).
 
-## Running Tests
+# Infrastructure
 
-* Run unit and integration tests: `npm test`
-* Run end-to-end tests: `npm run test:e2e`
+L'infrastructure va compter plus de 10 000 utilisateurs connectes en simultané.
 
-## Code Coverage Report
+## Les choix
 
-A new code coverage report is generated every time `npm test` runs.
-Normally this coverage report is ignored by git.
-This project includes it in source control so the coverage report can be viewed in the demo app:
-[http://express-app-testing-demo.herokuapp.com/coverage/lcov-report/index.html](http://express-app-testing-demo.herokuapp.com/coverage/lcov-report/index.html)
+### Serveur
+
+Nous avons choisis d'utiliser AWS Cloud, il permet de s'adapter au nombre d'utilisateur qui vont être connecté.
+
+### Base de données
+
+Nous utilisons une base de données NoSQL, elle permet de dispatcher les charges de travails sur les différents serveurs
+
+### Les librairies utilisés
+
+Les seuls dépendances autorisés sont  `express`,  `passport`  et  `websocket`  ou  `socket.io`.
+
+### Base de données
+
+### Queue
+
+### Sysadmin
+
+### Monitoring
+
